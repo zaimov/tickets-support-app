@@ -6,7 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {register, reset} from "../features/auth/authSlice";
 import Spinner from "../components/Spinner";
 
-const Register = () => {
+function Register() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

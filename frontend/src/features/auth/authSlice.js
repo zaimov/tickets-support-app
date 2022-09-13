@@ -12,6 +12,7 @@ const initialState = {
   message: ''
 }
 
+// Register new user
 export const register = createAsyncThunk(
   'auth/register',
   async (user, thunkApi) => {
@@ -27,6 +28,7 @@ export const register = createAsyncThunk(
   }
 )
 
+// Login user
 export const login = createAsyncThunk(
   'auth/login',
   async (user, thunkApi) => {
